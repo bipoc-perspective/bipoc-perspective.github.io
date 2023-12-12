@@ -1,0 +1,129 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #FFF1D0;
+}
+@font-face{
+  font-family: "provicali";
+  src: url(fonts/Provicali.otf);
+}
+@font-face{
+  font-family: "roxeston";
+  src: url(fonts/ROXESTON.otf);
+}
+hr{
+    height: 1px;
+    background-color: #8E443D;
+    border: none;
+}
+
+h1{
+  font-family: "provicali";
+  color: #511730;
+  letter-spacing:2px;
+}
+.flex-container {
+  display: flex;
+  margin: auto;
+  margin-top: 25px;
+  padding: 5px;
+  width: 90vw;
+  max-width: 850px;
+}
+
+.flex-container img {
+  float: left;
+  width: 30vw;
+  max-width: 300px;
+  min-width: 250px;
+  margin: 18px;
+}
+
+li {
+  display: inline;
+
+}
+li a{
+  font-size:20px;
+  font-family: "roxeston";
+  text-decoration: none;
+  color: #DE6B48;
+}
+
+p{
+  font-family:Merriweather;
+  font-size: 18px;
+}
+
+#paoloFreire{
+  font-family: 'provicali';
+  text-transform: uppercase;
+  color:#511730;
+}
+
+
+/* stats */
+
+.grid {
+  width: 80vw;
+  max-width: 850px;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.grid div {
+  border-radius: 5px;
+  width:27%;
+  display: flex;
+  border:#DE6B48 solid 1px;
+  padding: 10px 20px;
+  background: #fffbe5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid div h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: Merriweather;
+}
+
+.grid div h3 {
+  font-family:roxeston;
+  background-color: #fff1d0;
+  color: #8E443D;
+  width: fit-content;
+  border-radius:  2px;
+  padding: 3px 2px;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid div {
+    margin-left:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .grid div h1 {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .grid div h3 {
+    display: inline;
+  }
+}
